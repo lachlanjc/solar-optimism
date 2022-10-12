@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'MD Primer';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.fontdue.com/mass-driver/fonts/64dc63bd3a6271930502fed56a31737a3dcbcdde.woff2') format('woff2'), url('https://fonts.fontdue.com/mass-driver/fonts/64dc63bd3a6271930502fed56a31737a3dcbcdde.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'MD Primer';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://fonts.fontdue.com/mass-driver/fonts/fbd37605f1c8840536c6f1f695cf970ea3f2afc8.woff2') format('woff2'), url('https://fonts.fontdue.com/mass-driver/fonts/fbd37605f1c8840536c6f1f695cf970ea3f2afc8.woff') format('woff');
+}

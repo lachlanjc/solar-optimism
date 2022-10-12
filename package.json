@@ -6,9 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.3",
+    "clsx": "^1.2.1",
+    "framer-motion": "^7.5.3",
     "next": "latest",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "recharts": "^2.1.15"
   },
   "devDependencies": {
     "@types/node": "17.0.35",
