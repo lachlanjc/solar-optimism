@@ -1,0 +1,106 @@
+{
+  "MktDay": "10-12-2022",
+  "RefId": "12-Oct-2022 - Interval 20:00 EST",
+  "instance": [
+    {
+      "DateTimeEST": "2022-10-12 12:00:00 AM",
+      "HourEndingEST": "1",
+      "Value": "-3.61"
+    },
+    {
+      "DateTimeEST": "2022-10-12 1:00:00 AM",
+      "HourEndingEST": "2",
+      "Value": "-3.65"
+    },
+    {
+      "DateTimeEST": "2022-10-12 2:00:00 AM",
+      "HourEndingEST": "3",
+      "Value": "-3.63"
+    },
+    {
+      "DateTimeEST": "2022-10-12 3:00:00 AM",
+      "HourEndingEST": "4",
+      "Value": "-3.53"
+    },
+    {
+      "DateTimeEST": "2022-10-12 4:00:00 AM",
+      "HourEndingEST": "5",
+      "Value": "-3.48"
+    },
+    {
+      "DateTimeEST": "2022-10-12 5:00:00 AM",
+      "HourEndingEST": "6",
+      "Value": "-3.47"
+    },
+    {
+      "DateTimeEST": "2022-10-12 6:00:00 AM",
+      "HourEndingEST": "7",
+      "Value": "-3.40"
+    },
+    {
+      "DateTimeEST": "2022-10-12 7:00:00 AM",
+      "HourEndingEST": "8",
+      "Value": "38.08"
+    },
+    {
+      "DateTimeEST": "2022-10-12 8:00:00 AM",
+      "HourEndingEST": "9",
+      "Value": "335.80"
+    },
+    {
+      "DateTimeEST": "2022-10-12 9:00:00 AM",
+      "HourEndingEST": "10",
+      "Value": "591.35"
+    },
+    {
+      "DateTimeEST": "2022-10-12 10:00:00 AM",
+      "HourEndingEST": "11",
+      "Value": "681.04"
+    },
+    {
+      "DateTimeEST": "2022-10-12 11:00:00 AM",
+      "HourEndingEST": "12",
+      "Value": "936.87"
+    },
+    {
+      "DateTimeEST": "2022-10-12 12:00:00 PM",
+      "HourEndingEST": "13",
+      "Value": "1049.83"
+    },
+    {
+      "DateTimeEST": "2022-10-12 1:00:00 PM",
+      "HourEndingEST": "14",
+      "Value": "1156.91"
+    },
+    {
+      "DateTimeEST": "2022-10-12 2:00:00 PM",
+      "HourEndingEST": "15",
+      "Value": "1113.33"
+    },
+    {
+      "DateTimeEST": "2022-10-12 3:00:00 PM",
+      "HourEndingEST": "16",
+      "Value": "1077.74"
+    },
+    {
+      "DateTimeEST": "2022-10-12 4:00:00 PM",
+      "HourEndingEST": "17",
+      "Value": "897.26"
+    },
+    {
+      "DateTimeEST": "2022-10-12 5:00:00 PM",
+      "HourEndingEST": "18",
+      "Value": "235.17"
+    },
+    {
+      "DateTimeEST": "2022-10-12 6:00:00 PM",
+      "HourEndingEST": "19",
+      "Value": "8.21"
+    },
+    {
+      "DateTimeEST": "2022-10-12 7:00:00 PM",
+      "HourEndingEST": "20",
+      "Value": "-3.70"
+    }
+  ]
+}

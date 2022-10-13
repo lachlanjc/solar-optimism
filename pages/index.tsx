@@ -1,47 +1,59 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/future/image'
-import imgHero from '../public/hero.jpg'
+import imgFarm from '../public/farm.jpeg'
+import imgBlobs from '../public/wallpaper.webp'
 
 import RenewablesMix from '../components/renewables-mix'
 import SolarPrice from '../components/solar-price'
+import RealTime from '../components/real-time'
 
-const Home: NextPage = () => {
+const Home: NextPage = ({ todayData }: { todayData: {} }) => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center">
       <Head>
         <title>The Case for Climate Optimism</title>
       </Head>
 
-      <header className="flex w-full min-h-screen flex-col md:flex-row md:px-8 gap-8 md:gap-12 items-center justify-center border-bottom">
-        <div
-          className="bg-gradient-to-b w-full h-screen absolute z-0 top-0 left-1/2 -translate-y-2/4 -translate-x-2/4 from-lime-100"
-          style={{
-            backgroundImage: 'radial-gradient(var(--tw-gradient-stops) 80%)',
-            zIndex: -1,
-          }}
-        />
+      <header className="relative flex w-full min-h-screen items-center justify-center p-8">
         <Image
-          src={imgHero}
-          alt="DALL-E rendering of solarpunk city skyline on sunny day, with trees and wind turbines in distance"
+          src={imgBlobs}
+          alt="Aerial view of a solar farm"
           placeholder="blur"
-          className="h-auto w-auto md:h-96"
+          className="absolute inset-0 object-cover object-center w-full h-full z-0"
         />
-        <div className="sm:px-8 md:px-0 py-16">
-          <h1 className="text-7xl font-bold max-w-2xl">
-            I’m <span className="text-lime-500">optimistic</span> about climate
-            change.
+        <div className="bg-opacity-80 bg-white bg-blend-saturation shadow-2xl rounded-3xl p-8 md:p-12 sticky max-w-3xl text-center">
+          <h1 className="text-6xl font-bold max-w-3xl">
+            If there’s one reason to be{' '}
+            <span className="text-amber-500">optimistic</span> about climate
+            change, it’s <span className="text-amber-500">solar power</span>.
           </h1>
-          <p className="mt-5 text-2xl text-gray-600 max-w-lg">
+          <p className="mt-5 text-2xl mx-auto text-gray-600 max-w-lg">
             Without massive action, it’s true we’re facing crisis. But there’s
             too many narratives of doom: we are taking action, & crucially, each
             of the critical steps is getting cheaper & easier.
           </p>
+
+          <p className="text-gray-500 text-lg mt-8">
+            {'By '}
+            <a
+              href="https://lachlanjc.com"
+              className="hover:underline text-pink-600"
+            >
+              @lachlanjc
+            </a>
+            {', October 2022'}
+          </p>
         </div>
       </header>
 
-      <RenewablesMix />
       <SolarPrice />
+      <RealTime todayData={todayData} />
+
+      <p className="py-20 text-lg">
+        67% of global population lives in countries where solar and wind are
+        cheaper to build and operate than emitting sources
+      </p>
 
       <footer className="p-8 w-full items-center justify-center border-t dark:border-zinc-900">
         <div className="flex flex-col md:flex-row gap-4 max-w-4xl mx-auto text-sm">
@@ -68,3 +80,10 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+export const getStaticProps = async () => {
+  const todayData = await fetch(
+    'https://api.misoenergy.org/MISORTWDDataBroker/DataBrokerServices.asmx?messageType=getSolarActual&returnType=json'
+  ).then((res) => res.json())
+  return { props: { todayData } }
+}
