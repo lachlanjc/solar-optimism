@@ -1,20 +1,19 @@
 import palette from '../../lib/tailwind-palette'
 import { ResponsiveContainer, Funnel, FunnelChart, LabelList } from 'recharts'
+import { round } from 'lodash'
 
-export default function RealTime({
-  todayData,
-}: {
-  todayData: {
-    MktDay: string
-    instance: Array<{
-      DateTimeEST: string
-      HourEndingEST: string
-      Value: string
-    }>
-  }
-}) {
+export interface TodayData {
+  MktDay: string
+  instance: Array<{
+    DateTimeEST: string
+    HourEndingEST: string
+    Value: string
+  }>
+}
+
+export default function RealTime({ todayData }: { todayData: TodayData }) {
   return (
-    <section className="relative py-24 flex flex-col items-center gap-8 bg-gradient-to-b from-white to-gray-50 w-full border-t overflow-y-hidden">
+    <section className="relative min-h-screen py-24 flex flex-col items-center gap-8 bg-gradient-to-b from-white to-stone-50 w-full border-t overflow-y-hidden">
       <div
         className="bg-gradient-to-b w-full absolute z-0 top-0 left-1/2 -translate-y-2/4 -translate-x-2/4 from-amber-200"
         style={{
@@ -37,14 +36,21 @@ export default function RealTime({
           </div>{' '}
           today.
         </h2>
-        <p className="text-xl leading-normal text-gray-600 mt-6 mb-8 relative">
-          Data from today, {new Date(todayData.MktDay).toLocaleDateString()}{' '}
+        <p className="text-lg leading-normal text-gray-600 mt-6 mb-8 relative">
+          Hourly data from {new Date(todayData.MktDay).toLocaleDateString()}{' '}
           covering the{' '}
           <a
             href="https://api.misoenergy.org/MISORTWD/lmpcontourmap.html"
-            className="text-amber-500 underline"
+            className="text-amber-600 underline"
           >
             MISO region of the Midwestern US
+          </a>
+          , provided by{' '}
+          <a
+            href="https://www.misoenergy.org/markets-and-operations/real-time--market-data/operations-displays/"
+            className="text-amber-600 underline"
+          >
+            MISO
           </a>
           .
         </p>
@@ -64,14 +70,23 @@ export default function RealTime({
             dataKey="Value"
             fill={palette.amber[200]}
             stroke={palette.amber[400]}
-            strokeWidth={2}
+            strokeWidth={1}
           >
+            <LabelList
+              position="center"
+              fill={palette.amber[700]}
+              stroke="none"
+              dataKey="HourEndingEST"
+              formatter={(value: string) => `${value}:00`}
+            />
             <LabelList
               position="insideRight"
               fill="#000"
               stroke="none"
-              dataKey="HourEndingEST"
-              formatter={(value: string) => `${value}:00`}
+              dataKey="Value"
+              formatter={(value: number) =>
+                value > 0 ? `${round(value)} MWh` : ''
+              }
             />
           </Funnel>
         </FunnelChart>

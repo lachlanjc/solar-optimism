@@ -10,11 +10,15 @@ import {
   Brush,
   Line,
 } from 'recharts'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
+import { useInView } from 'framer-motion'
 
 const PRICE_KEY = 'Cost per Watt'
 
 export default function SolarPrice() {
+  const sectionRef = useRef<HTMLDivElement>(null)
+  const isInView = useInView(sectionRef)
+
   const [brushIndices, setBrushIndices] = useState([0, data.length - 1])
   const selectedYears = brushIndices[1] - brushIndices[0]
   const decades = Math.floor(selectedYears / 10)
@@ -23,7 +27,7 @@ export default function SolarPrice() {
   const priceDiff = (startPrice - latestPrice) / startPrice
 
   return (
-    <section className="relative py-24 flex flex-col items-center gap-8 bg-gradient-to-b from-white to-gray-50 w-full border-t overflow-y-hidden">
+    <section className="relative min-h-screen py-24 flex flex-col items-center gap-8 bg-gradient-to-b from-white to-stone-50 w-full border-t overflow-y-hidden">
       <div
         className="bg-gradient-to-b w-full absolute z-0 top-0 left-1/2 -translate-y-2/4 -translate-x-2/4 from-lime-200"
         style={{
