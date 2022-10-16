@@ -11,6 +11,7 @@ import {
   CartesianGrid,
 } from 'recharts'
 import { round } from 'lodash'
+import { motion } from 'framer-motion'
 
 const STACKS: Record<string, Record<number, string>> = {
   'Asia Pacific': palette.sky,
@@ -24,11 +25,11 @@ const STACKS: Record<string, Record<number, string>> = {
 
 export default function Regions() {
   return (
-    <section className="relative min-h-screen py-24 flex flex-col items-center bg-gradient-to-b from-white to-gray-50 w-full border-t overflow-y-hidden">
-      <div className="w-full max-w-4xl mb-8">
+    <section className="relative min-h-screen py-24 flex flex-col items-center bg-gradient-to-b from-white dark:from-black to-rose-100 dark:to-stone-900  w-full overflow-y-hidden">
+      <div className="w-full max-w-4xl mb-8 md:mb-12 lg:mb-16">
         <h2 className="text-6xl leading-none">
-          There’s been a <span className="text-sky-600">30x</span> explosion in
-          solar installed—in just a decade.
+          There’s been a <strong className="text-cyan-500">30x</strong>{' '}
+          explosion in solar installed—in just a decade.
         </h2>
       </div>
 
@@ -76,9 +77,25 @@ export default function Regions() {
           ))}
         </AreaChart>
       </ResponsiveContainer>
-      <p className="text-stone-500 text-sm text-center mt-4">
+      <p className="text-stone-500 dark:text-stone-400 text-sm text-center mt-4">
         CIS: a group of former Soviet countries in Eurasia.
       </p>
+
+      <motion.div
+        initial={{ opacity: 0, translateY: 48 }}
+        whileInView={{
+          opacity: 1,
+          translateY: 0,
+          transition: { delay: 4, duration: 1 },
+        }}
+        viewport={{ once: false }}
+        className="border-2 border-rose-500 leading-none rounded-full py-3 px-4 text-center mt-8 md:mt-12"
+      >
+        <strong className="text-rose-500 text-lg block">So why is that?</strong>{' '}
+        <span className="text-stone-500 dark:text-stone-400 text-sm max-w-min">
+          (electricity overall is only ↑ 15%)
+        </span>
+      </motion.div>
     </section>
   )
 }

@@ -13,7 +13,7 @@ import {
 
 export default function RenewablesMix() {
   return (
-    <section className="py-20 flex flex-col items-center gap-8 bg-gradient-to-b from-white to-gray-100 w-full">
+    <section className="py-24 flex flex-col items-center gap-8 w-full">
       <div className="w-full max-w-2xl">
         <h2 className="text-4xl max-w-2xl">
           Our first, most critical step is transitioning from{' '}

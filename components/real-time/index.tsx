@@ -13,14 +13,14 @@ export interface TodayData {
 
 export default function RealTime({ todayData }: { todayData: TodayData }) {
   return (
-    <section className="relative min-h-screen py-24 flex flex-col items-center gap-8 bg-gradient-to-b from-white to-stone-50 w-full border-t overflow-y-hidden">
+    <section className="relative min-h-screen py-24 flex flex-col items-center gap-8 w-full overflow-y-hidden">
       <div
-        className="bg-gradient-to-b w-full absolute z-0 top-0 left-1/2 -translate-y-2/4 -translate-x-2/4 from-amber-200"
+        className="bg-gradient-to-b w-full absolute z-0 bottom-0 left-1/2 translate-y-3/4 -translate-x-2/4 from-amber-200"
         style={{
           height: '66vh',
           backgroundImage: 'radial-gradient(var(--tw-gradient-stops) 80%)',
           zIndex: 0,
-          opacity: 0.5,
+          opacity: 0.75,
         }}
       />
 
@@ -36,9 +36,9 @@ export default function RealTime({ todayData }: { todayData: TodayData }) {
           </div>{' '}
           today.
         </h2>
-        <p className="text-lg leading-normal text-gray-600 mt-6 mb-8 relative">
-          Hourly data from {new Date(todayData.MktDay).toLocaleDateString()}{' '}
-          covering the{' '}
+        <p className="text-lg leading-normal text-stone-600 dark:text-stone-400 mt-6 mb-8 relative">
+          Hourly data in MWh from{' '}
+          {new Date(todayData.MktDay).toLocaleDateString()} covering the{' '}
           <a
             href="https://api.misoenergy.org/MISORTWD/lmpcontourmap.html"
             className="text-amber-600 underline"
@@ -80,12 +80,12 @@ export default function RealTime({ todayData }: { todayData: TodayData }) {
               formatter={(value: string) => `${value}:00`}
             />
             <LabelList
-              position="insideRight"
-              fill="#000"
+              position="right"
+              fill={palette.amber[900]}
               stroke="none"
               dataKey="Value"
               formatter={(value: number) =>
-                value > 0 ? `${round(value)} MWh` : ''
+                value > 100 ? `${round(value)}` : ''
               }
             />
           </Funnel>
