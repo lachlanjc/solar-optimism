@@ -4,17 +4,18 @@ import {
   LineChart,
   XAxis,
   YAxis,
-  Tooltip,
+  Text,
   ResponsiveContainer,
   Line,
 } from 'recharts'
-import { round } from 'lodash'
+import millify from 'millify'
+import { motion } from 'framer-motion'
 
 export default function Explanation() {
   return (
     <section className="relative min-h-screen py-24 flex flex-col items-center gap-8 w-full overflow-y-hidden">
       <div
-        className="bg-gradient-to-b w-full absolute z-0 bottom-0 left-1/2 translate-y-3/4 -translate-x-2/4 from-lime-200"
+        className="bg-gradient-to-b w-full absolute z-0 bottom-0 left-1/2 translate-y-3/4 -translate-x-2/4 from-fuchsia-200 pointer-events-none"
         style={{
           height: '66vh',
           backgroundImage: 'radial-gradient(var(--tw-gradient-stops) 80%)',
@@ -33,12 +34,13 @@ export default function Explanation() {
         </p> */}
 
         <p className="text-xl max-w-2xl leading-normal text-stone-700 dark:text-stone-400">
-          It’s the same reason if you’re making a cake, making two isn’t twice
-          as hard: as production scales, it creates{' '}
-          <strong>economies of scale</strong>. This drives down prices,
-          increasing demand, creating a virtuous cycle.
+          As production scales, it creates <strong>economies of scale</strong>:
+          the same reason if you’re making a cake, making two isn’t twice as
+          hard. Plus, after you make thousands of cakes, you get faster, & the
+          cakes are better. In solar, this drives down prices, increasing
+          demand, & improves efficiency, creating a virtuous cycle.
         </p>
-        <div className="flex flex-wrap text-center gap-8 mt-10 mb-6">
+        <div className="flex flex-wrap justify-center text-center gap-8 mt-12 mb-6">
           <div>
             <div className="text-6xl text-lime-600 font-bold">2x</div>
             <div className="text-lg text-stone-500 dark:text-stone-400">
@@ -62,12 +64,13 @@ export default function Explanation() {
         {/* <p className="text-lg max-w-xl leading-normal text-stone-700 my-5"></p> */}
       </div>
 
+      <h3 className="text-stone-700 text-center -mb-8 font-bold">
+        Price per Watt vs Installed Capacity (MW), Logarithmic Scale
+      </h3>
       <ResponsiveContainer
-        width="100%"
-        height="100%"
-        minHeight={512}
-        minWidth={640}
-        className="max-w-4xl w-full h-48"
+        width={640}
+        height={512}
+        className="w-48 h-48 max-w-full aspect-square"
       >
         <LineChart
           data={data}
@@ -78,33 +81,57 @@ export default function Explanation() {
             bottom: 5,
           }}
         >
-          <XAxis dataKey="Cumulative capacity" />
+          <XAxis
+            dataKey="Cumulative capacity"
+            tickFormatter={(value: number) =>
+              millify(Number(value), { precision: 0 })
+            }
+            scale="log"
+            tickCount={10}
+            // label={{ value: 'Installed capacity', y: -5 }}
+          />
           <YAxis
             dataKey="Cost per Watt"
-            // scale="log"
-            type="number"
-            allowDataOverflow
-            tickFormatter={(value: string) => `$${value}`}
-            label={{
-              value: 'Cost per Watt',
-              angle: -90,
-              fill: palette.gray[600],
-              position: 'insideLeft',
-            }}
-          />
-          <Tooltip
-            separator=""
-            // @ts-expect-error recharts wants a number
-            formatter={(value: number) => [`$${round(value, 2)} per W`, '']}
-            wrapperStyle={{ border: 0 }}
+            scale="log"
+            // type="number"
+            domain={[0.25, 120]}
+            allowDataOverflow={false}
+            tickFormatter={(value: number) =>
+              `$${millify(Number(value), { precision: 2 })}${
+                value < 1 ? '0' : ''
+              }`
+            }
+            // label={{
+            //   value: 'Price per Watt',
+            //   angle: -90,
+            //   fill: palette.gray[600],
+            //   position: 'insideLeft',
+            // }}
           />
           <Line
-            dataKey="Cumulative capacity"
-            stroke={palette.lime[600]}
+            dataKey="Cost per Watt"
+            stroke={palette.fuchsia[600]}
             strokeWidth={2}
           />
         </LineChart>
       </ResponsiveContainer>
+
+      <motion.a
+        href="https://blog.datawrapper.de/weeklychart-logscale/"
+        initial={{ opacity: 0, translateY: 48 }}
+        whileInView={{
+          opacity: 1,
+          translateY: 0,
+          transition: { delay: 4, duration: 1 },
+        }}
+        whileHover={{
+          translateY: -6,
+        }}
+        viewport={{ once: false }}
+        className="border-2 border-fuchsia-500 text-fuchsia-500 text-lg font-bold shadow-md shadow-fuchsia-300 leading-none rounded-full py-3 px-4 text-center mt-8 md:mt-12"
+      >
+        Not sure how to read a log scale?{'  '}↗
+      </motion.a>
     </section>
   )
 }

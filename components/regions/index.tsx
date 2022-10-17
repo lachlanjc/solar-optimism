@@ -25,10 +25,20 @@ const STACKS: Record<string, Record<number, string>> = {
 
 export default function Regions() {
   return (
-    <section className="relative min-h-screen py-24 flex flex-col items-center bg-gradient-to-b from-white dark:from-black to-rose-100 dark:to-stone-900  w-full overflow-y-hidden">
+    <section className="relative min-h-screen py-24 flex flex-col items-center  w-full overflow-y-hidden">
+      <div
+        className="bg-gradient-to-b w-full absolute z-0 bottom-0 left-1/2 translate-y-3/4 -translate-x-2/4 from-orange-200 pointer-events-none"
+        style={{
+          height: '66vh',
+          backgroundImage: 'radial-gradient(var(--tw-gradient-stops) 80%)',
+          zIndex: 0,
+          opacity: 0.75,
+        }}
+      />
+
       <div className="w-full max-w-4xl mb-8 md:mb-12 lg:mb-16">
         <h2 className="text-6xl leading-none">
-          There’s been a <strong className="text-cyan-500">30x</strong>{' '}
+          There’s been a <strong className="text-orange-500">30x</strong>{' '}
           explosion in solar installed—in just a decade.
         </h2>
       </div>
@@ -89,9 +99,11 @@ export default function Regions() {
           transition: { delay: 4, duration: 1 },
         }}
         viewport={{ once: false }}
-        className="border-2 border-rose-500 leading-none rounded-full py-3 px-4 text-center mt-8 md:mt-12"
+        className="border-2 border-orange-500 leading-none rounded-full py-3 px-4 text-center mt-8 md:mt-12"
       >
-        <strong className="text-rose-500 text-lg block">So why is that?</strong>{' '}
+        <strong className="text-orange-500 text-lg block">
+          So why is that?
+        </strong>{' '}
         <span className="text-stone-500 dark:text-stone-400 text-sm max-w-min">
           (electricity overall is only ↑ 15%)
         </span>

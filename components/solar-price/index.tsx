@@ -2,13 +2,13 @@ import data from './data.json'
 import palette from '../../lib/tailwind-palette'
 import { round } from 'lodash'
 import {
-  LineChart,
+  AreaChart,
   XAxis,
   YAxis,
   Tooltip,
   ResponsiveContainer,
   Brush,
-  Line,
+  Area,
 } from 'recharts'
 import { useRef, useState } from 'react'
 import { useInView, motion } from 'framer-motion'
@@ -73,7 +73,7 @@ export default function SolarPrice() {
         minWidth={640}
         className="max-w-4xl w-full h-48"
       >
-        <LineChart
+        <AreaChart
           data={data}
           margin={{
             top: 5,
@@ -87,7 +87,7 @@ export default function SolarPrice() {
             dataKey="Cost per Watt"
             tickFormatter={(value: string) => `$${value}`}
             label={{
-              value: 'Cost per Watt',
+              value: 'Price per Watt',
               angle: -90,
               fill: palette.gray[600],
               position: 'insideLeft',
@@ -100,10 +100,12 @@ export default function SolarPrice() {
             wrapperStyle={{ border: 0 }}
             contentStyle={{ fontVariantNumeric: 'tabular-nums' }}
           />
-          <Line
+          <Area
             dataKey="Cost per Watt"
             stroke={palette.lime[600]}
             strokeWidth={2}
+            fill={palette.lime[200]}
+            fillOpacity={1}
           />
           <Brush
             dataKey="Year"
@@ -118,7 +120,7 @@ export default function SolarPrice() {
             }}
             alwaysShowText
           />
-        </LineChart>
+        </AreaChart>
       </ResponsiveContainer>
 
       <motion.div

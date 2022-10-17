@@ -4,7 +4,7 @@ import imgFarm from '../public/farm.jpg'
 
 export default function Header() {
   const { scrollYProgress } = useViewportScroll()
-  const translateY = useTransform(scrollYProgress, [0, 1], [0, -768])
+  const translateY = useTransform(scrollYProgress, [0, 1], [0, -980])
 
   return (
     <header className="relative flex w-full min-h-screen items-center justify-center p-8">

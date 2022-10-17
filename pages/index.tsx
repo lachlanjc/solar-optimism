@@ -13,7 +13,7 @@ function Home({ todayData }: { todayData: TodayData }) {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center dark:bg-black dark:text-stone-50">
       <Head>
-        <title>The Case for Climate Optimism</title>
+        <title>How Solar Energy Should Make Us Climate-Optimistic</title>
       </Head>
 
       <Header />
@@ -45,7 +45,11 @@ function Home({ todayData }: { todayData: TodayData }) {
             </a>
             .
             <br />
-            Research from Our World in Data. Ending illustration adapted from{' '}
+            Research & data from{' '}
+            <a href="https://ourworldindata.org/cheap-renewables-growth">
+              Our World in Data
+            </a>
+            . Ending illustration adapted from{' '}
             <a
               href="https://twitter.com/MengTo/status/1564743669483200513"
               className="hover:underline text-amber-600"
