@@ -1,14 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@headlessui/react': ^1.7.3
   '@types/lodash': ^4.14.186
   '@types/node': 17.0.35
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.5
   '@types/topojson-client': ^3.1.1
   '@visx/geo': ^2.10.0
-  '@visx/scale': ^2.2.2
   autoprefixer: ^10.4.7
   clsx: ^1.2.1
   framer-motion: ^7.5.3
@@ -18,18 +16,13 @@ specifiers:
   postcss: ^8.4.14
   react: 18.1.0
   react-dom: 18.1.0
-  react-number-format: ^5.0.1
   recharts: ^2.1.15
   tailwindcss: ^3.1.2
   topojson-client: ^3.1.0
   typescript: 4.7.2
 
 dependencies:
-  '@headlessui/react': 1.7.3_ef5jwxihqo6n7gxfmzogljlgcm
-  '@types/lodash': 4.14.186
-  '@types/topojson-client': 3.1.1
   '@visx/geo': 2.10.0_react@18.1.0
-  '@visx/scale': 2.2.2
   clsx: 1.2.1
   framer-motion: 7.5.3_ef5jwxihqo6n7gxfmzogljlgcm
   lodash: 4.17.21
@@ -37,14 +30,15 @@ dependencies:
   next: 12.3.1_ef5jwxihqo6n7gxfmzogljlgcm
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
-  react-number-format: 5.0.1_ef5jwxihqo6n7gxfmzogljlgcm
   recharts: 2.1.15_ef5jwxihqo6n7gxfmzogljlgcm
   topojson-client: 3.1.0
 
 devDependencies:
+  '@types/lodash': 4.14.186
   '@types/node': 17.0.35
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.5
+  '@types/topojson-client': 3.1.1
   autoprefixer: 10.4.12_postcss@8.4.17
   postcss: 8.4.17
   tailwindcss: 3.1.8_postcss@8.4.17
@@ -71,17 +65,6 @@ packages:
     resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
     dev: false
     optional: true
-
-  /@headlessui/react/1.7.3_ef5jwxihqo6n7gxfmzogljlgcm:
-    resolution: {integrity: sha512-LGp06SrGv7BMaIQlTs8s2G06moqkI0cb0b8stgq7KZ3xcHdH3qMP+cRyV7qe5x4XEW/IGY48BW4fLesD6NQLng==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      react: ^16 || ^17 || ^18
-      react-dom: ^16 || ^17 || ^18
-    dependencies:
-      react: 18.1.0
-      react-dom: 18.1.0_react@18.1.0
-    dev: false
 
   /@motionone/animation/10.14.0:
     resolution: {integrity: sha512-h+1sdyBP8vbxEBW5gPFDnj+m2DCqdlAuf2g6Iafb1lcMnqjsRXWlPw1AXgvUMXmreyhqmPbJqoNfIKdytampRQ==}
@@ -278,10 +261,6 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /@types/d3-color/1.4.2:
-    resolution: {integrity: sha512-fYtiVLBYy7VQX+Kx7wU/uOIkGQn8aAEY8oWMoyja3N4dLd8Yf6XgSIR/4yWvMuveNOH5VShnqCgRqqh/UNanBA==}
-    dev: false
-
   /@types/d3-color/2.0.3:
     resolution: {integrity: sha512-+0EtEjBfKEDtH9Rk3u3kLOUXM5F+iZK+WvASPb0MhIZl8J8NUvGeZRwKCXl+P3HkYx5TdU4YtcibpqHkSR9n7w==}
     dev: false
@@ -290,12 +269,6 @@ packages:
     resolution: {integrity: sha512-yZbPb7/5DyL/pXkeOmZ7L5ySpuGr4H48t1cuALjnJy5sXQqmSSAYBiwa6Ya/XpWKX2rJqGDDubmh3nOaopOpeA==}
     dependencies:
       '@types/geojson': 7946.0.10
-    dev: false
-
-  /@types/d3-interpolate/1.4.2:
-    resolution: {integrity: sha512-ylycts6llFf8yAEs1tXzx2loxxzDZHseuhPokrqKprTQSTcD3JbJI1omZP1rphsELZO3Q+of3ff0ZS7+O6yVzg==}
-    dependencies:
-      '@types/d3-color': 1.4.2
     dev: false
 
   /@types/d3-interpolate/2.0.2:
@@ -326,11 +299,10 @@ packages:
 
   /@types/geojson/7946.0.10:
     resolution: {integrity: sha512-Nmh0K3iWQJzniTuPRcJn5hxXkfB1T1pgB89SBig5PlJQU5yocazeu4jATJlaA0GYFKWMqDdvYemoSnF2pXgLVA==}
-    dev: false
 
   /@types/lodash/4.14.186:
     resolution: {integrity: sha512-eHcVlLXP0c2FlMPm56ITode2AgLMSa6aJ05JTTbYbI+7EMkCEE5qk2E41d5g2lCVTqRe0GnnRFurmlCsDODrPw==}
-    dev: false
+    dev: true
 
   /@types/node/17.0.35:
     resolution: {integrity: sha512-vu1SrqBjbbZ3J6vwY17jBs8Sr/BKA+/a/WtjRG+whKg1iuLFOosq872EXS0eXWILdO36DHQQeku/ZcL6hz2fpg==}
@@ -360,13 +332,13 @@ packages:
     dependencies:
       '@types/geojson': 7946.0.10
       '@types/topojson-specification': 1.0.2
-    dev: false
+    dev: true
 
   /@types/topojson-specification/1.0.2:
     resolution: {integrity: sha512-SGc1NdX9g3UGDp6S+p+uyG+Z8CehS51sUJ9bejA25Xgn2kkAguILk6J9nxXK+0M/mbTBN7ypMA7+4HVLNMJ8ag==}
     dependencies:
       '@types/geojson': 7946.0.10
-    dev: false
+    dev: true
 
   /@visx/geo/2.10.0_react@18.1.0:
     resolution: {integrity: sha512-YdhHagNQw0pW1jgLcEgqEqzXwfYQy0Y1UDeM96qZnM8Ki8/nGYGB2A5wnZO27mp290HnmYgmRJNpAEjp7erlTw==}
@@ -392,17 +364,6 @@ packages:
       classnames: 2.3.2
       prop-types: 15.8.1
       react: 18.1.0
-    dev: false
-
-  /@visx/scale/2.2.2:
-    resolution: {integrity: sha512-3aDySGUTpe6VykDQmF+g2nz5paFu9iSPTcCOEgkcru0/v5tmGzUdvivy8CkYbr87HN73V/Jc53lGm+kJUQcLBw==}
-    dependencies:
-      '@types/d3-interpolate': 1.4.2
-      '@types/d3-scale': 3.3.2
-      '@types/d3-time': 2.1.1
-      d3-interpolate: 1.4.0
-      d3-scale: 3.3.0
-      d3-time: 2.1.1
     dev: false
 
   /acorn-node/1.8.2:
@@ -565,10 +526,6 @@ packages:
       internmap: 1.0.1
     dev: false
 
-  /d3-color/1.4.1:
-    resolution: {integrity: sha512-p2sTHSLCJI2QKunbGb7ocOh7DgTAn8IrLx21QRc/BSnodXM4sv6aLQlnfpvehFMLZEfBc6g9pH9SWQccFYfJ9Q==}
-    dev: false
-
   /d3-color/2.0.0:
     resolution: {integrity: sha512-SPXi0TSKPD4g9tw0NMZFnR95XVgUZiBH+uUTqQuDu1OsE2zomHU7ho0FISciaPvosimixwHFl3WHLGabv6dDgQ==}
     dev: false
@@ -581,12 +538,6 @@ packages:
     resolution: {integrity: sha512-XG4d1c/UJSEX9NfU02KwBL6BYPj8YKHxgBEw5om2ZnTRSbIcego6dhHwcxuSR3clxh0EpE38os1DVPOmnYtTPg==}
     dependencies:
       d3-array: 1.2.4
-    dev: false
-
-  /d3-interpolate/1.4.0:
-    resolution: {integrity: sha512-V9znK0zc3jOPV4VD2zZn0sDhZU3WAE2bmlxdIwwQPPzPjvyLkd8B3JUVdS1IDUFDkWZ72c9qnv1GK2ZagTZ8EA==}
-    dependencies:
-      d3-color: 1.4.1
     dev: false
 
   /d3-interpolate/2.0.1:
@@ -1072,17 +1023,6 @@ packages:
 
   /react-lifecycles-compat/3.0.4:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
-    dev: false
-
-  /react-number-format/5.0.1_ef5jwxihqo6n7gxfmzogljlgcm:
-    resolution: {integrity: sha512-Tyv5Ygb77ZbC5vUNNAfXwE+zQKaN0LsTo7GwjudU/MckXa7beVAlFddq7QQnGobEglyq+4zsBltKvM9HMQD0GA==}
-    peerDependencies:
-      react: ^0.14 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^18.0.0
-      react-dom: ^0.14 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^18.0.0
-    dependencies:
-      prop-types: 15.8.1
-      react: 18.1.0
-      react-dom: 18.1.0_react@18.1.0
     dev: false
 
   /react-resize-detector/7.1.2_ef5jwxihqo6n7gxfmzogljlgcm:
