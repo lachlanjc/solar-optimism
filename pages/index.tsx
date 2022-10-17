@@ -40,7 +40,7 @@ function Home({ todayData }: { todayData: TodayData }) {
             </a>
             , October 2022.
             <br />
-            Research & most chart data from{' '}
+            Research & solar pricing/install data from{' '}
             <a
               href="https://ourworldindata.org/cheap-renewables-growth"
               className="hover:underline text-amber-600"

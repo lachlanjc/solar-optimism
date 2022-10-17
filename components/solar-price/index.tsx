@@ -62,7 +62,7 @@ export default function SolarPrice() {
         <p className="text-xl leading-normal text-stone-600 dark:text-stone-400 mt-6 mb-8">
           No other source of energy has dropped in price so drastically.
           <br />
-          Solar is now the cheapest form of electricity.
+          Solar is now the cheapest form of electricity in most places.
         </p>
       </div>
 

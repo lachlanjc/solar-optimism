@@ -24,7 +24,7 @@ export default function RealTime({ todayData }: { todayData: TodayData }) {
         }}
       />
 
-      <div className="w-full max-w-4xl relative z-1">
+      <div className="w-full max-w-3xl relative z-1">
         <h2 className="text-6xl max-w-3xl tabular-nums">
           Here’s the solar energy produced{' '}
           <div
@@ -36,7 +36,7 @@ export default function RealTime({ todayData }: { todayData: TodayData }) {
           </div>{' '}
           today.
         </h2>
-        <p className="text-lg leading-normal text-stone-600 dark:text-stone-400 mt-6 mb-8 relative">
+        <p className="leading-normal text-stone-600 dark:text-stone-400 mt-6 mb-8 relative">
           Hourly data in MWh from{' '}
           {new Date(todayData.MktDay).toLocaleDateString()} covering the{' '}
           <a
@@ -45,7 +45,8 @@ export default function RealTime({ todayData }: { todayData: TodayData }) {
           >
             MISO region of the Midwestern US
           </a>
-          , provided by{' '}
+          .<br />
+          Data source:{' '}
           <a
             href="https://www.misoenergy.org/markets-and-operations/real-time--market-data/operations-displays/"
             className="text-yellow-600 underline"

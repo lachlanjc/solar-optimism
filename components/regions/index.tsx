@@ -17,7 +17,7 @@ const STACKS: Record<string, Record<number, string>> = {
   'Asia Pacific': palette.sky,
   'Middle East': palette.violet,
   'North America': palette.pink,
-  'South and Central America': palette.red,
+  'South & Central America': palette.red,
   Africa: palette.amber,
   CIS: palette.lime,
   Europe: palette.teal,
@@ -36,10 +36,10 @@ export default function Regions() {
         }}
       />
 
-      <div className="w-full max-w-4xl mb-8 md:mb-12 lg:mb-16">
+      <div className="w-full max-w-3xl mb-8 md:mb-12 lg:mb-16">
         <h2 className="text-6xl leading-none">
-          There’s been a <strong className="text-rose-500">30x</strong>{' '}
-          explosion in solar installed—in just a decade.
+          The result? We’ve <strong className="text-rose-500">30x’d</strong>{' '}
+          solar capacity—in just a decade.
         </h2>
       </div>
 
@@ -48,7 +48,7 @@ export default function Regions() {
         height="100%"
         minHeight={512}
         minWidth={640}
-        className="max-w-4xl w-full h-48"
+        className="max-w-3xl w-full h-48"
       >
         <AreaChart
           data={data}

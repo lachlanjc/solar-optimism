@@ -25,9 +25,13 @@ export default function Explanation() {
         }}
       />
 
-      <div className="w-full max-w-4xl relative z-1">
+      <div className="w-full max-w-3xl relative z-1">
         <h2 className="text-6xl mb-6">
-          As we install more, solar gets cheaper, driving more installation.
+          As we install more,
+          <br />
+          solar gets cheaper,
+          <br />
+          driving more installation.
         </h2>
         {/* <p className="text-lg max-w-xl leading-normal text-stone-600 dark:text-stone-400 my-5">
           Imagine you found an apartment in 2009 with $3590 rent; a decade later
