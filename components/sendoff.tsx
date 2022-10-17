@@ -20,13 +20,13 @@ export default function Sendoff() {
         style={{ '--tw-bg-opacity': 0.85 }}
       >
         <p className="mb-6 text-3xl text-stone-600 dark:text-stone-200 max-w-xl leading-snug">
-          There’s many more technologies critical to a net-zero world we need to
-          scale up & bring prices down: batteries, heat pumps, carbon removal, &
-          water desalination, to name a few.
+          There’s many more technologies critical to a net zero world we need to
+          scale up & bring prices down: hydrogen electrolyzers, batteries, heat
+          pumps, carbon removal, & water desalination, just to name a few.
         </p>
         <h1 className="text-3xl max-w-xl font-bold text-stone-900 dark:text-stone-100 leading-snug">
           Solar power’s startling progress this decade shows the path for
-          scaling our next climate solutions.
+          scaling our upcoming climate solutions.
         </h1>
       </motion.div>
     </section>

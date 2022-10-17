@@ -8,6 +8,7 @@ import Regions from '../components/regions'
 import SolarPrice from '../components/solar-price'
 import RealTime, { TodayData } from '../components/real-time'
 import Explanation from '../components/explanation'
+import FullSource from '../components/full-source'
 
 function Home({ todayData }: { todayData: TodayData }) {
   return (
@@ -18,9 +19,10 @@ function Home({ todayData }: { todayData: TodayData }) {
 
       <Header />
 
-      <Regions />
       <SolarPrice />
       <Explanation />
+      <Regions />
+      <FullSource />
       <RealTime todayData={todayData} />
       {/* <RenewablesMix /> */}
 
@@ -36,18 +38,23 @@ function Home({ todayData }: { todayData: TodayData }) {
             >
               @lachlanjc
             </a>
-            , October 2022. Header image from{' '}
+            , October 2022.
+            <br />
+            Research & most chart data from{' '}
+            <a
+              href="https://ourworldindata.org/cheap-renewables-growth"
+              className="hover:underline text-amber-600"
+            >
+              Our World in Data
+            </a>
+            .
+            <br />
+            Header image from{' '}
             <a
               href="https://unsplash.com/photos/Ilpf2eUPpUE"
               className="hover:underline text-amber-600"
             >
               Unsplash
-            </a>
-            .
-            <br />
-            Research & data from{' '}
-            <a href="https://ourworldindata.org/cheap-renewables-growth">
-              Our World in Data
             </a>
             . Ending illustration adapted from{' '}
             <a
@@ -73,9 +80,11 @@ function Home({ todayData }: { todayData: TodayData }) {
 export default Home
 
 export const getStaticProps: GetStaticProps = async () => {
-  // const todayData = await fetch(
-  //   'https://api.misoenergy.org/MISORTWDDataBroker/DataBrokerServices.asmx?messageType=getSolarActual&returnType=json'
-  // ).then((res) => res.json())
-  const todayData = require('../components/real-time/sample.json')
+  let todayData = await fetch(
+    'https://api.misoenergy.org/MISORTWDDataBroker/DataBrokerServices.asmx?messageType=getSolarActual&returnType=json'
+  ).then((res) => res.json())
+  if (todayData?.instance.length < 5) {
+    todayData = require('../components/real-time/sample.json')
+  }
   return { props: { todayData } }
 }

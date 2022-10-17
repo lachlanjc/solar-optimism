@@ -1,0 +1,209 @@
+﻿Country code,X.1,Country (standardised),Category,Column1
+CAF,null,Central African Republic,Superabundant,0.1% or less
+SOM,null,Somalia,Superabundant,0.1% or less
+TCD,null,Chad,Superabundant,0.1% or less
+SSD,null,South Sudan,Superabundant,0.1% or less
+NER,null,Niger,Superabundant,0.1% or less
+NAM,null,Namibia,Superabundant,0.1% or less
+MDG,null,Madagascar,Superabundant,0.1% or less
+ERI,null,Eritrea,Superabundant,0.1% or less
+COD,null,Democratic Republic of the Congo,Superabundant,0.1% or less
+MLI,null,Mali,Superabundant,0.1% or less
+GNB,null,Guinea-Bissau,Superabundant,0.1% or less
+MRT,null,Mauritania,Superabundant,0.1% or less
+GIN,null,Guinea,Superabundant,0.1% or less
+BWA,null,Botswana,Superabundant,0.1% or less
+TZA,null,Tanzania,Superabundant,0.1% or less
+LBR,null,Liberia,Superabundant,0.1% or less
+SLE,null,Sierra Leone,Superabundant,0.1% or less
+MOZ,null,Mozambique,Superabundant,0.1% or less
+AGO,null,Angola,Superabundant,0.1% or less
+DJI,null,Djibouti,Superabundant,0.1% or less
+ETH,null,Ethiopia,Superabundant,0.1% or less
+BFA,null,Burkina Faso,Superabundant,0.1% or less
+ZMB,null,Zambia,Superabundant,0.1% or less
+YEM,null,Yemen,Superabundant,0.1% or less
+SDN,null,Sudan,Superabundant,0.1% or less
+AFG,null,Afghanistan,Superabundant,0.1% or less
+GAB,null,Gabon,Superabundant,0.1% or less
+CMR,null,Cameroon,Superabundant,0.1% or less
+COG,null,Congo,Superabundant,0.1% or less
+ZWE,null,Zimbabwe,Superabundant,0.1% or less
+KEN,null,Kenya,Superabundant,0.1% or less
+BOL,null,Bolivia,Superabundant,0.1% or less
+MNG,null,Mongolia,Superabundant,0.1% or less
+GUY,null,Guyana,Superabundant,0.1% or less
+SLB,null,Solomon Islands,Superabundant,0.1% or less
+UGA,null,Uganda,Superabundant,0.1% or less
+BDI,null,Burundi,Superabundant,0.1% or less
+TGO,null,Togo,Superabundant,0.1% or less
+SEN,null,Senegal,Superabundant,0.1% or less
+TLS,null,Timor-Leste,Superabundant,0.1% or less
+CIV,null,Ivory Coast,Superabundant,0.1% or less
+VUT,null,Vanuatu,Superabundant,0.1% or less
+PNG,null,Papua New Guinea,Superabundant,0.1% or less
+MWI,null,Malawi,Superabundant,0.1% or less
+NIC,null,Nicaragua,Superabundant,0.1% or less
+LSO,null,Lesotho,Superabundant,0.1% or less
+BEN,null,Benin,Superabundant,0.1% or less
+GMB,null,Gambia,Superabundant,0.1% or less
+KIR,null,Kiribati,Abundant,0.1% or less
+BLZ,null,Belize,Abundant,0.1% or less
+LBY,null,Libya,Abundant,0.1% or less
+URY,null,Uruguay,Abundant,0.1% or less
+GHA,null,Ghana,Abundant,0.1% or less
+HTI,null,Haiti,Abundant,0.1% or less
+SWZ,null,Swaziland,Abundant,0.1% or less
+PER,null,Peru,Abundant,0.1% or less
+HND,null,Honduras,Abundant,0.1% or less
+SUR,null,Suriname,Abundant,0.1% or less
+MAR,null,Morocco,Abundant,Below 1%
+BRA,null,Brazil,Abundant,0.1% or less
+PRY,null,Paraguay,Abundant,0.1% or less
+BHS,null,Bahamas,Abundant,Below 1%
+KHM,null,Cambodia,Abundant,0.1% or less
+NGA,null,Nigeria,Abundant,0.1% or less
+ARG,null,Argentina,Abundant,0.1% or less
+AUS,null,Australia,Abundant,0.1% or less
+COM,null,Comoros,Abundant,0.1% or less
+RWA,null,Rwanda,Abundant,0.1% or less
+GNQ,null,Equatorial Guinea,Abundant,Below 1%
+FJI,null,Fiji,Abundant,Below 1%
+COL,null,Colombia,Abundant,0.1% or less
+CPV,null,Cape Verde,Abundant,Below 1%
+DZA,null,Algeria,Abundant,0.1% or less
+ZAF,null,South Africa,Abundant,Below 1%
+CHL,null,Chile,Abundant,Below 1%
+TUN,null,Tunisia,Abundant,Below 1%
+NCL,null,New Caledonia,Abundant,Below 1%
+SYR,null,Syria,Abundant,Below 1%
+GTM,null,Guatemala,Abundant,Below 1%
+ISL,null,Iceland,Abundant,null
+MEX,null,Mexico,Abundant,Below 1%
+VEN,null,Venezuela,Abundant,Below 1%
+NZL,null,New Zealand,Abundant,Below 1%
+SLV,null,El Salvador,Abundant,Below 1%
+CUB,null,Cuba,Abundant,Below 1%
+TCA,null,Turks and Caicos Islands,Abundant,Below 1%
+OMN,null,Oman,Abundant,Below 1%
+ECU,null,Ecuador,Abundant,Below 1%
+TON,null,Tonga,Abundant,Below 1%
+LAO,null,Laos,Abundant,Below 1%
+FSM,null,Federated States of Micronesia,Abundant,0.1% or less
+PAK,null,Pakistan,Abundant,Below 1%
+CRI,null,Costa Rica,Abundant,Below 1%
+JOR,null,Jordan,Abundant,Below 1%
+DMA,null,Dominica,Abundant,Below 1%
+KAZ,null,Kazakhstan,Abundant,Below 1%
+SAU,null,Saudi Arabia,Abundant,Below 1%
+NPL,null,Nepal,Abundant,0.1% or less
+STP,null,São Tomé and Príncipe,Abundant,Below 1%
+WSM,null,Samoa,Abundant,0.1% or less
+KGZ,null,Kyrgyzstan,Abundant,Below 1%
+PAN,null,Panama,Abundant,Below 1%
+IRN,null,Iran,Abundant,Below 1%
+PYF,null,French Polynesia,Abundant,Below 1%
+IDN,null,Indonesia,Abundant,Below 1%
+MUS,null,Mauritius,Abundant,Below 5%
+LKA,null,Sri Lanka,Replete,Below 1%
+TJK,null,Tajikistan,Replete,Below 1%
+EGY,null,Egypt,Replete,Below 1%
+DOM,null,Dominican Republic,Replete,Below 1%
+IRQ,null,Iraq,Replete,Below 1%
+PRK,null,North Korea,Replete,Below 1%
+MNE,null,Montenegro,Replete,Below 1%
+JAM,null,Jamaica,Replete,Below 1%
+VCT,null,Saint Vincent and the Grenadines,Replete,Below 1%
+PHL,null,Philippines,Replete,Below 1%
+TKM,null,Turkmenistan,Replete,Below 1%
+GRD,null,Grenada,Replete,Below 1%
+KNA,null,Saint Kitts and Nevis,Replete,Below 1%
+ARM,null,Armenia,Replete,Below 1%
+IRL,null,Ireland,Replete,Over 5%
+NOR,null,Norway,Replete,Over 5%
+UZB,null,Uzbekistan,Replete,Below 1%
+ATG,null,Antigua and Barbuda,Replete,Below 5%
+MKD,null,Republic of North Macedonia,Replete,Below 1%
+GEO,null,Georgia,Replete,Below 1%
+BIH,null,Bosnia and Herzegovina,Replete,Below 5%
+GUM,null,Guam,Replete,Below 5%
+LCA,null,Saint Lucia,Replete,Below 1%
+ALB,null,Albania,Replete,Below 1%
+VNM,null,Vietnam,Replete,Below 1%
+PRT,null,Portugal,Replete,Below 5%
+LVA,null,Latvia,Replete,Below 5%
+EST,null,Estonia,Replete,Over 5%
+VGB,null,British Virgin Islands,Replete,Below 5%
+CYP,null,Cyprus,Replete,Below 5%
+CAN,null,Canada,Replete,Below 5%
+MDV,null,Maldives,Replete,Over 5%
+AZE,null,Azerbaijan,Replete,Below 5%
+TUR,null,Turkey,Replete,Below 5%
+USA,null,United States,Replete,Below 5%
+GRC,null,Greece,Replete,Below 5%
+MYS,null,Malaysia,Replete,Below 1%
+HRV,null,Croatia,Replete,Below 5%
+IND,null,India,Replete,Below 1%
+BRB,null,Barbados,Replete,Below 5%
+PRI,null,Puerto Rico,Replete,Below 5%
+ESP,null,Spain,Replete,Below 5%
+RUS,null,Russia,Replete,Below 5%
+BGR,null,Bulgaria,Replete,Below 5%
+THA,null,Thailand,Replete,Below 1%
+BGD,null,Bangladesh,Replete,Below 1%
+MLT,null,Malta,Replete,Over 5%
+CYM,null,Cayman Islands,Replete,Below 5%
+#N/A,null,Kosovo,Replete,Below 5%
+CHN,null,China,Replete,Below 5%
+MDA,null,Moldova,Replete,Below 5%
+ROU,null,Romania,Replete,Below 5%
+LTU,null,Lithuania,Replete,Over 5%
+DNK,null,Denmark,Replete,Over 5%
+SRB,null,Serbia,Replete,Below 5%
+ISR,null,Israel,Replete,Below 5%
+ABW,null,Aruba,Replete,Over 5%
+ARE,null,United Arab Emirates,Replete,Below 5%
+UKR,null,Ukraine,Replete,Below 5%
+BLR,null,Belarus,Replete,Below 5%
+BTN,null,Bhutan,Replete,Below 1%
+ASM,null,American Samoa,Replete,Below 5%
+LBN,null,Lebanon,Replete,Below 5%
+SWE,null,Sweden,Replete,Over 5%
+GBR,null,United Kingdom,Replete,Over 5%
+NRU,null,Nauru,Replete,Below 5%
+KWT,null,Kuwait,Replete,Over 5%
+FRA,null,France,Replete,Over 5%
+SVN,null,Slovenia,Stretched,Below 5%
+QAT,null,Qatar,Stretched,Over 5%
+HUN,null,Hungary,Stretched,Below 5%
+FIN,null,Finland,Stretched,null
+ITA,null,Italy,Stretched,Below 5%
+VIR,null,United States Virgin Islands,Stretched,Over 5%
+POL,null,Poland,Stretched,Over 5%
+TTO,null,Trinidad and Tobago,Stretched,Over 5%
+SYC,null,Seychelles,Stretched,Below 5%
+SVK,null,Slovakia,Stretched,Over 5%
+AUT,null,Austria,Stretched,Over 5%
+BRN,null,Brunei,Stretched,Below 5%
+JPN,null,Japan,Stretched,Over 5%
+BMU,null,Bermuda,Stretched,Over 5%
+CZE,null,Czech Republic,Stretched,Over 5%
+CHE,null,Switzerland,Stretched,Over 5%
+#N/A,null,Palestinian National Authority,Stretched,null
+TWN,null,Taiwan,Stretched,null
+KOR,null,South Korea,Stretched,Over 5%
+NLD,null,Netherlands,Stretched,Over 5%
+DEU,null,Germany,Stretched,Over 5%
+BHR,null,Bahrain,Stretched,Over 5%
+LUX,null,Luxembourg,Stretched,Over 5%
+BEL,null,Belgium,Stretched,Over 5%
+MAC,null,Macau,Stretched,Over 5%
+HKG,null,Hong Kong,Stretched,Over 5%
+SGP,null,Singapore,Stretched,Over 5%
+null,null,null,null,null
+null,null,null,null,null
+null,null,null,null,null
+null,null,null,null,null
+null,null,null,null,null
+null,null,null,null,null
+null,null,null,null,null

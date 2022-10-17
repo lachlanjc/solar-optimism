@@ -1,11 +1,12 @@
 import palette from '../../lib/tailwind-palette'
 import data from '../solar-price/data.json'
 import {
-  LineChart,
+  ComposedChart,
   XAxis,
   YAxis,
   Text,
   ResponsiveContainer,
+  Scatter,
   Line,
 } from 'recharts'
 import millify from 'millify'
@@ -72,7 +73,7 @@ export default function Explanation() {
         height={512}
         className="w-48 h-48 max-w-full aspect-square"
       >
-        <LineChart
+        <ComposedChart
           data={data}
           margin={{
             top: 5,
@@ -108,12 +109,17 @@ export default function Explanation() {
             //   position: 'insideLeft',
             // }}
           />
+          <Scatter dataKey="Cost per Watt" fill={palette.fuchsia[300]} />
           <Line
             dataKey="Cost per Watt"
             stroke={palette.fuchsia[600]}
+            dot={false}
+            activeDot={false}
+            legendType="none"
             strokeWidth={2}
+            type="natural"
           />
-        </LineChart>
+        </ComposedChart>
       </ResponsiveContainer>
 
       <motion.a
