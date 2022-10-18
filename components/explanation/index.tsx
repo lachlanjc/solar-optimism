@@ -33,12 +33,12 @@ export default function Explanation() {
           <br />
           driving more installation.
         </h2>
-        {/* <p className="text-lg max-w-xl leading-normal text-stone-600 dark:text-stone-400 my-5">
+        {/* <p className="text-lg max-w-xl leading-normal text-stone-600 my-5">
           Imagine you found an apartment in 2009 with $3590 rent; a decade later
           it’s $400, and better. That’s how solar electricity has progressed.
         </p> */}
 
-        <p className="text-xl max-w-2xl leading-normal text-stone-700 dark:text-stone-400">
+        <p className="text-xl max-w-2xl leading-normal text-stone-700">
           As production scales, it creates <strong>economies of scale</strong>:
           the same reason if you’re making a cake, making two isn’t twice as
           hard. Plus, after you make thousands of cakes, you get faster, & the
@@ -48,16 +48,12 @@ export default function Explanation() {
         <div className="flex flex-wrap justify-center text-center gap-8 mt-12 mb-6">
           <div>
             <div className="text-6xl text-lime-600 font-bold">2x</div>
-            <div className="text-lg text-stone-500 dark:text-stone-400">
-              installed capacity
-            </div>
+            <div className="text-lg text-stone-500">installed capacity</div>
           </div>
           <div className="text-stone-400 text-6xl">&rarr;</div>
           <div>
             <div className="text-6xl text-red-500">&darr; 20%</div>
-            <div className="text-lg text-stone-500 dark:text-stone-400">
-              price of modules
-            </div>
+            <div className="text-lg text-stone-500">price of modules</div>
           </div>
           <div className="text-stone-400 text-6xl self-center ml-6">🔄</div>
         </div>

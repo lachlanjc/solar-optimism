@@ -19,7 +19,7 @@ export default function FullSource() {
           What would it take to use solar for{' '}
           <span className="text-orange-500">all electricity</span>?
         </h2>
-        <p className="text-xl max-w-2xl leading-normal text-stone-700 dark:text-stone-400 mt-6">
+        <p className="text-xl max-w-2xl leading-normal text-stone-700 mt-6">
           While not a feasible grid strategy, as solar is intermittent, here’s a
           thought experiment for the potential scale of solar in an
           energy-abundant world.

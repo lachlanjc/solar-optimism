@@ -12,7 +12,7 @@ export default function Sendoff() {
         src={imgBlobs}
         alt="Aerial view of a solar farm"
         placeholder="blur"
-        className="absolute inset-0 object-cover object-center dark:opacity-80 w-full h-full z-0"
+        className="absolute inset-0 object-cover object-center w-full h-full z-0"
       />
       <motion.div
         className="backdrop-blur-xs bg-white dark:bg-stone-700 shadow-2xl rounded-3xl relative p-8 md:px-12 md:py-14 max-w-3xl"

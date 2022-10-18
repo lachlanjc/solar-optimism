@@ -36,7 +36,7 @@ export default function RealTime({ todayData }: { todayData: TodayData }) {
           </div>{' '}
           today.
         </h2>
-        <p className="leading-normal text-stone-600 dark:text-stone-400 mt-6 mb-8 relative">
+        <p className="leading-normal text-stone-600 mt-6 mb-8 relative">
           Hourly data in MWh from{' '}
           {new Date(todayData.MktDay).toLocaleDateString()} covering the{' '}
           <a

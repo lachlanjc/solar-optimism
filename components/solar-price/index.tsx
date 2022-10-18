@@ -44,7 +44,7 @@ export default function SolarPrice() {
 
       <div className="w-full max-w-4xl relative z-1">
         <h2 className="text-6xl tabular-nums">
-          The&nbsp;price has dropped
+          The&nbsp;price of solar has dropped
           <br />
           <span className="text-lime-600 whitespace-nowrap">
             ↓ {round(priceDiff * 100, 1)}%
@@ -59,7 +59,7 @@ export default function SolarPrice() {
           </span>
           .
         </h2>
-        <p className="text-xl leading-normal text-stone-600 dark:text-stone-400 mt-6 mb-8">
+        <p className="text-xl leading-normal text-stone-600 mt-6 mb-8">
           No other source of energy has dropped in price so drastically.
           <br />
           Solar is now the cheapest form of electricity in most places.
@@ -137,7 +137,7 @@ export default function SolarPrice() {
               ? 'border-blue-600'
               : 'border-indigo-600'
             : 'border-blue-600'
-        } transition-colors bg-white dark:bg-stone-900 relative z-10 leading-none rounded-full py-3 px-5 text-center mt-8 md:mt-12`}
+        } transition-colors bg-white relative z-10 leading-none rounded-full py-3 px-5 text-center mt-8 md:mt-12`}
       >
         <strong
           className={`transition-colors ${

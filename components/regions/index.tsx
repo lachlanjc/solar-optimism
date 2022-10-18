@@ -87,7 +87,7 @@ export default function Regions() {
           ))}
         </AreaChart>
       </ResponsiveContainer>
-      <p className="text-stone-500 dark:text-stone-400 text-sm text-center mt-4">
+      <p className="text-stone-500 text-sm text-center mt-4">
         CIS: a group of former Soviet countries in Eurasia.
       </p>
 
@@ -102,7 +102,7 @@ export default function Regions() {
         className="border-2 border-rose-500 leading-none rounded-full py-3 px-4 text-center mt-8 md:mt-12"
       >
         <strong className="text-rose-500 text-lg block">So why is that?</strong>{' '}
-        <span className="text-stone-500 dark:text-stone-400 text-sm max-w-min">
+        <span className="text-stone-500 text-sm max-w-min">
           (electricity overall is only ↑ 15%)
         </span>
       </motion.div> */}

@@ -3,7 +3,6 @@ import Head from 'next/head'
 
 import Header from '../components/header'
 import Sendoff from '../components/sendoff'
-import RenewablesMix from '../components/renewables-mix'
 import Regions from '../components/regions'
 import SolarPrice from '../components/solar-price'
 import RealTime, { TodayData } from '../components/real-time'
@@ -12,7 +11,7 @@ import FullSource from '../components/full-source'
 
 function Home({ todayData }: { todayData: TodayData }) {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center dark:bg-black dark:text-stone-50">
+    <div className="flex min-h-screen flex-col items-center justify-center">
       <Head>
         <title>How Solar Energy Should Make Us Climate-Optimistic</title>
       </Head>
@@ -30,7 +29,7 @@ function Home({ todayData }: { todayData: TodayData }) {
 
       <footer className="p-8 w-full items-center justify-center">
         <div className="flex flex-col md:flex-row items-center gap-4 max-w-4xl mx-auto text-sm">
-          <p className="text-stone-600 dark:text-stone-400 mr-auto">
+          <p className="text-stone-600 mr-auto">
             {'Site by '}
             <a
               href="https://lachlanjc.com"
