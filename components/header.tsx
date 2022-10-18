@@ -15,7 +15,7 @@ export default function Header() {
         className="absolute inset-0 object-cover object-center w-full h-full z-0"
       />
       <motion.div
-        className="backdrop-blur-lg bg-white dark:bg-stone-800 bg-blend-saturation shadow-2xl rounded-3xl p-8 md:p-12 sticky max-w-3xl"
+        className="backdrop-blur-lg bg-white dark:bg-stone-800 dark:text-stone-300 bg-blend-saturation shadow-2xl rounded-3xl p-8 md:p-12 sticky max-w-3xl"
         // @ts-expect-error custom property
         style={{ '--tw-bg-opacity': 0.85, translateY }}
       >
@@ -26,11 +26,11 @@ export default function Header() {
         </h1>
         <p className="mt-5 text-2xl text-stone-600 dark:text-stone-400 max-w-lg">
           Switching off fossil fuels for electricity is the most critical step
-          in our transition to a net-zero carbon world. Solar power is leading
-          here—here’s why.
+          in our transition to a net-zero carbon world. But solar also shows us
+          how to scale other solutions we need.
         </p>
 
-        <p className="text-stone-500 dark:text-stone-400 text-lg mt-8">
+        <p className="text-stone-500 text-lg mt-8">
           {'By '}
           <a
             href="https://lachlanjc.com"
