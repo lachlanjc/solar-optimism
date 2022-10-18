@@ -67,7 +67,7 @@ function Home({ todayData }: { todayData: TodayData }) {
           </p>
           <a
             className="hover:underline text-amber-600"
-            href="https://github.com/lachlanjc/climate-optimism"
+            href="https://github.com/lachlanjc/solar-optimism"
           >
             Open source on GitHub
           </a>
